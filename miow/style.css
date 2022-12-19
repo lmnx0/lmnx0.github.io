@@ -20,38 +20,33 @@ body {
     display: block;
     transition: 0.5s;
 }
+  
+#searchbar{
+    margin-left: 15%;
+    padding:15px;
+    border-radius: 10px;
+}
 
-#search {
-    background-image: url('/css/searchicon.png');
-    background-position: 10px 12px;
-    background-repeat: no-repeat;
-    width: 100%;
-    font-size: 16px;
-    padding: 12px 20px 12px 40px;
-    border: 1px solid #ddd;
-    margin-bottom: 12px;
+input[type=text] {
+     width: 30%;
+     -webkit-transition: width 0.15s ease-in-out;
+     transition: width 0.15s ease-in-out;
 }
-  
-#musicList {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+
+/* When the input field gets focus,
+change its width to 100% */
+input[type=text]:focus {
+    width: 70%;
 }
-  
-#musicList li a {
-    border: 1px solid #ddd;
-    margin-top: -1px; /* Prevent double borders */
-    background-color: #f6f6f6;
-    padding: 12px;
-    text-decoration: none;
-    font-size: 18px;
-    color: black;
-    display: block
+
+#list{
+   font-size:  1.5em;
+   margin-left: 90px;
 }
-  
-#musicList li a:hover:not(.header) {
-    background-color: #eee;
-}
+
+.animals{
+  display: list-item;    
+} 
 
 .sidebar div {
     padding: 8px 8px 8px 30px;
