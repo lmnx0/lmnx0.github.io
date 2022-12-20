@@ -42,9 +42,10 @@ input[type=text]:focus {
 #list{
    font-size:  1.5em;
    margin-left: 90px;
+   list-style: none;
 }
 
-.animals{
+.music{
   display: list-item;    
 } 
 
