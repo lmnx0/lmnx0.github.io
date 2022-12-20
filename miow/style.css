@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    overflow: hidden;
 }
 
 .sidebar {
@@ -94,4 +95,60 @@ input[type=text]:focus {
 .logo {
     font-size: 32px;
     color: black;
+}
+
+.settings-btn {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    width: 6em;
+}
+
+/* The Modal (background) */
+.settings {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 25%;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+  
+/* Modal Content */
+.settings-content {
+    background-color: #ffe6d9;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 25%;
+    color: black;
+    border-radius: 12px;
+}
+  
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }
