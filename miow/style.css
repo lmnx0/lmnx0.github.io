@@ -4,6 +4,26 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
 body {
     margin: 0;
     overflow: hidden;
@@ -29,7 +49,7 @@ body {
 }
   
 #searchbar{
-    margin-left: 15%;
+    margin-left: 30px;
     padding:15px;
     border-radius: 10px;
 }
@@ -43,18 +63,22 @@ input[type=text] {
 /* When the input field gets focus,
 change its width to 100% */
 input[type=text]:focus {
-    width: 70%;
+    width: 40%;
 }
 
 #list{
-   font-size:  1.5em;
-   margin-left: 90px;
+   padding: 20px;
    list-style: none;
 }
 
 .music{
-  display: list-item;    
-} 
+  display: list-item;
+  margin: 10px;
+}
+
+.musicname {
+    visibility: hidden;
+}
 
 .sidebar div {
     padding: 8px 8px 8px 30px;
