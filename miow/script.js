@@ -1,4 +1,21 @@
+//basta mga ing ani
 var resize = 1 //resize
+const modal = document.querySelector(".modal");
+const modalContent = document.querySelector(".modal-content");
+const trigger = document.querySelector(".trigger");
+const closeButton = document.querySelector(".close-button");
+const trigger1 = document.querySelector('.trigger1');
+const para = document.createElement('p');
+const para2 = document.createElement('p');
+para.setAttribute("class", "Abouttitle");
+para2.setAttribute("class", "Abouttxt");
+const aboutbtn = document.createElement('button');//creates button
+
+//event listener sa modal
+aboutbtn.addEventListener("click", showingAbout);
+trigger.addEventListener("click", toggleModal);
+closeButton.addEventListener("click", toggleModal);
+window.addEventListener("click", windowOnClick);
 
 //search bar
 function search_music() {
@@ -40,30 +57,30 @@ function minNav() {
     document.getElementById("main").style.marginLeft= "350px";
 }
 
-// Get the modal
-var modal = document.getElementById("settings-menu");
-
-// Get the button that opens the modal
-var btn = document.getElementById("settings-button");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
+//modal
+function toggleModal() {
+    aboutbtn.innerText = 'About';
+    modalContent.append(aboutbtn);
+    const createModal = document.createElement('div');
+    modal.classList.toggle("show-modal");
+    createModal.setAttribute('class','modal');
+    para.remove();
+    para2.remove();
+}
+ 
+function windowOnClick(event) {
+    if (event.target === modal) {
+        toggleModal();
+    }
 }
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
+//about modal
+function showingAbout(){
+    aboutbtn.remove();//remove about button
+    para.innerText = "About us: ";
+    para2.innerText = "MAGHILAK NAKO KAY AKO RA JUD ISA NAGHIMO DINHIA YAWA";
+    document.querySelector(".modal-content").append(para);
+    document.querySelector(".modal-content").append(para2);
 }
 
 //backup resize

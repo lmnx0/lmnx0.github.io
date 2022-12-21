@@ -36,19 +36,20 @@
     <div id="main">
         <!-- title bar -->
         <div class="titlebar">
-            <!-- Trigger/Open The Modal -->
             <div class="logo">Miow</div>
-            <button id="settings-button" class="settings-btn">Settings</button>
-            <!-- The Modal -->
-            <div id="settings-menu" class="settings">
-                <!-- Modal content -->
-                <div class="settings-content">
-                    <span class="close">&times;</span>
-                    <button class="settings-btn">Theme</button>
-                    <button class="settings-btn">About</button>
+            <div class="settings">
+                <button class="trigger">Settings</button>
+                <div class="modal">
+                    <div class="modal-content">
+                        <span class="close-button">&times;</span>
+                        <div class="modal">
+                            <div class="modal-content">
+                                <span class="close-button">&times;</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-  
         </div>
         <button class="openbtn" onclick="openNav()">☰</button>
     </div>
