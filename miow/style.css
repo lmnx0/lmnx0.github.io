@@ -40,12 +40,9 @@ body {
     transition: 0.5s;
     padding-top: 60px;
 }
-    
-.side-title {
-    padding: 8px 8px 8px 30px;
-    font-size: 40px;
-    display: block;
-    transition: 0.5s;
+
+#miowsic {
+    cursor: default;
 }
   
 #searchbar{
@@ -162,7 +159,7 @@ input[type=text]:focus {
     transform: translate(-50%, -50%);
     background-color: #ffe6d9;
     padding: 1rem 1.5rem;
-    width: 24rem;
+    width: 18rem;
     border-radius: 0.5rem;
     color: black;
 }

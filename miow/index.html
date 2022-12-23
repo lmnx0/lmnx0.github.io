@@ -10,9 +10,13 @@
 <body>
     <!-- sidebar -->
     <div id="mySidebar" class="sidebar">
-        <div class="closebtn" onclick="closeNav()">✕</div>
-        <div class="scrnbtn" onclick="clickNav()">❐</div>
-        <h1 class="side-title">Miowsic</h1>
+        <div class="sidebarbtns">
+            <header>
+                <h1 id="miowsic">Miowsic</h1>
+                <div class="closebtn" onclick="closeNav()">✕</div>
+                <div class="scrnbtn" onclick="clickNav()">❐</div>
+            </header>
+        </div>
         <!-- searchbar -->
         <input id="searchbar" onkeyup="search_music()" type="text"
         name="search" placeholder="Search Miowsic...">
@@ -32,28 +36,29 @@
         </ul>
     </div>
 
-    <!-- button sidebar -->
-    <div id="main">
-        <!-- title bar -->
-        <div class="titlebar">
-            <div class="logo">Miow</div>
-            <div class="settings">
-                <button class="trigger">Settings</button>
-                <div class="modal">
-                    <div class="modal-content">
-                        <span class="close-button">&times;</span>
-                        <div class="modal">
-                            <div class="modal-content">
-                                <span class="close-button">&times;</span>
+    <header>
+        <div id="main">
+            <!-- header -->
+            <div class="titlebar">
+                <div class="logo">Miow</div>
+                <div class="settings">
+                    <button class="trigger">Settings</button>
+                    <div class="modal">
+                        <div class="modal-content">
+                            <span class="close-button">&times;</span>
+                            <div class="modal">
+                                <div class="modal-content">
+                                    <span class="close-button">&times;</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- button sidebar -->
+            <button class="openbtn" onclick="openNav()">☰</button>
         </div>
-        <button class="openbtn" onclick="openNav()">☰</button>
-    </div>
-
+    </header>
 
     <script src="script.js"></script>
 </body>
