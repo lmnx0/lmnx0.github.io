@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 * {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Indie Flower', cursive;
 }
 
 /* width */
@@ -38,23 +38,19 @@ body {
     background-color: #ffcad4;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
-}
-
-#miowsic {
-    cursor: default;
 }
   
 #searchbar{
+    margin-top: 50px;
     margin-left: 30px;
     padding:15px;
     border-radius: 10px;
 }
 
 input[type=text] {
-     width: 30%;
-     -webkit-transition: width 0.15s ease-in-out;
-     transition: width 0.15s ease-in-out;
+    width: 30%;
+    -webkit-transition: width 0.15s ease-in-out;
+    transition: width 0.15s ease-in-out;
 }
 
 /* When the input field gets focus,
@@ -69,30 +65,45 @@ input[type=text]:focus {
 }
 
 .music{
-  display: list-item;
-  margin: 10px;
+    display: list-item;
+    margin: 10px;
 }
 
 .musicname {
     visibility: hidden;
 }
 
-.sidebar div {
-    padding: 8px 8px 8px 30px;
-    font-size: 24px;
-    display: block;
+.sidebarhead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px;
+    background-color: #f3abb6;
+    color: #fff;
     transition: 0.5s;
-    cursor: pointer;
 }
-    
-.sidebar .closebtn {
+
+#miowsic {
+    font-size: 32px;
+    color: black;
+}
+
+.sidebarhead button {
+    border: none;
+    background-color: inherit;
+    color: white    ;
+}
+
+.closebtn {
+    cursor: pointer;
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
 }
 
-.sidebar .scrnbtn {
+.scrnbtn {
+    cursor: pointer;    
     position: absolute;
     top: 0;
     right: 60px;
@@ -100,7 +111,6 @@ input[type=text]:focus {
 }
 
 .openbtn {
-    font-size: 24px;
     cursor: pointer;
     background-color: white;
     overflow: hidden;
@@ -125,18 +135,13 @@ input[type=text]:focus {
 }
 
 .settings button {
-    background-color: white;
+    background-color: inherit;
     border: none;
-    color: black;
-    padding: 20px;
+    color: white;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
     cursor: pointer;
-    border-radius: 12px;
-    width: 6em;
 }
 
 .modal {

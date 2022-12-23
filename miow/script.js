@@ -43,18 +43,21 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidebar").style.width = "0";
     document.getElementById("main").style.marginLeft= "0";
+    document.getElementById("sbscreen").innerHTML = "fullscreen";
 }
 
 //full screen
 function fullNav() {
     document.getElementById("mySidebar").style.width = "100%";
     document.getElementById("main").style.marginLeft= "100%";
+    document.getElementById("sbscreen").innerHTML = "fullscreen_exit";
 }
 
 //minimize
 function minNav() {
     document.getElementById("mySidebar").style.width = "350px";
     document.getElementById("main").style.marginLeft= "350px";
+    document.getElementById("sbscreen").innerHTML = "fullscreen";
 }
 
 //modal

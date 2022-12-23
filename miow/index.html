@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="style.css">
     <title>Miow</title>
 </head>
 <body>
     <!-- sidebar -->
     <div id="mySidebar" class="sidebar">
-        <div class="sidebarbtns">
+        <div class="sidebarhead">
             <header>
-                <h1 id="miowsic">Miowsic</h1>
-                <div class="closebtn" onclick="closeNav()">✕</div>
-                <div class="scrnbtn" onclick="clickNav()">❐</div>
+                <div id="miowsic">Miowsic</div>
+                <button class="scrnbtn" onclick="clickNav()"><i class="material-icons" id="sbscreen">fullscreen</i></button>
+                <button class="closebtn" onclick="closeNav()"><i class="material-icons">close</i></button>
             </header>
         </div>
         <!-- searchbar -->
@@ -42,7 +43,7 @@
             <div class="titlebar">
                 <div class="logo">Miow</div>
                 <div class="settings">
-                    <button class="trigger">Settings</button>
+                    <button class="trigger"><i class="material-icons">settings</i></button>
                     <div class="modal">
                         <div class="modal-content">
                             <span class="close-button">&times;</span>
@@ -56,10 +57,11 @@
                 </div>
             </div>
             <!-- button sidebar -->
-            <button class="openbtn" onclick="openNav()">☰</button>
+            <button class="openbtn" onclick="openNav()"><i class="material-icons">music_note</i></button>
         </div>
     </header>
 
+    
     <script src="script.js"></script>
 </body>
 </html>
