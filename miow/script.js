@@ -10,9 +10,13 @@ const para2 = document.createElement('p');
 para.setAttribute("class", "Abouttitle");
 para2.setAttribute("class", "Abouttxt");
 const aboutbtn = document.createElement('button');//creates button
+const themesbtn = document.createElement('button');
+aboutbtn.setAttribute("class", "aboutbtn");
+themesbtn.setAttribute("class", "themesbtn");
 
-//event listener sa modal
+//event listener
 aboutbtn.addEventListener("click", showingAbout);
+themesbtn.addEventListener("click", darkMode);
 trigger.addEventListener("click", toggleModal);
 closeButton.addEventListener("click", toggleModal);
 window.addEventListener("click", windowOnClick);
@@ -63,7 +67,9 @@ function minNav() {
 //modal
 function toggleModal() {
     aboutbtn.innerText = 'About';
+    themesbtn.innerText = 'Theme'
     modalContent.append(aboutbtn);
+    modalContent.append(themesbtn);
     const createModal = document.createElement('div');
     modal.classList.toggle("show-modal");
     createModal.setAttribute('class','modal');
@@ -80,6 +86,7 @@ function windowOnClick(event) {
 //about modal
 function showingAbout(){
     aboutbtn.remove();//remove about button
+    themesbtn.remove();
     para.innerText = "About us: ";
     para2.innerText = "MAGHILAK NAKO KAY AKO RA JUD ISA NAGHIMO DINHIA YAWA";
     document.querySelector(".modal-content").append(para);
@@ -109,4 +116,10 @@ function clickNav() {
         fullNav();
         -- resize;
     }
+}
+
+//dark mode
+function darkMode() {
+    var darkmode = document.body;
+    darkmode.classList.toggle("darkmode");
 }

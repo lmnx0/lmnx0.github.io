@@ -2,6 +2,14 @@
 
 * {
     font-family: 'Indie Flower', cursive;
+    
+    /* disable select */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
 }
 
 /* width */
@@ -24,6 +32,42 @@
     background: #555; 
 }
 
+/* darkmode */
+.darkmode {
+    background-color: #000000;
+}
+
+.darkmode .sidebar {
+    background-color: #000000;
+}
+
+.darkmode .titlebar {
+    background-color: #353532;
+}
+
+.darkmode .sidebarhead {
+    background-color: #353532;
+}
+
+.darkmode .openbtn {
+    background-color: #353532;
+}
+
+.darkmode .modal-content {
+    background-color: #353532;
+}
+
+.darkmode .settings .aboutbtn {
+    background-color: #FBFAF5;
+    color: #353532;
+}
+
+.darkmode .settings .themesbtn {
+    background-color: #FBFAF5;
+    color: #353532;
+}
+/* end of darkmode */
+
 body {
     margin: 0;
     overflow: hidden;
@@ -39,16 +83,18 @@ body {
     overflow-x: hidden;
     transition: 0.5s;
 }
-  
+
 #searchbar{
     margin-top: 50px;
     margin-left: 30px;
     padding:15px;
-    border-radius: 10px;
 }
 
 input[type=text] {
     width: 30%;
+    border: none;
+    border-bottom: 2px solid #353532;
+    background-color: inherit;
     -webkit-transition: width 0.15s ease-in-out;
     transition: width 0.15s ease-in-out;
 }
@@ -91,7 +137,7 @@ input[type=text]:focus {
 .sidebarhead button {
     border: none;
     background-color: inherit;
-    color: white    ;
+    color: white;
 }
 
 .closebtn {
@@ -111,9 +157,23 @@ input[type=text]:focus {
 }
 
 .openbtn {
-    cursor: pointer;
-    background-color: white;
-    overflow: hidden;
+    position: fixed;
+    padding: 15px;
+    font-size: 50px;
+    border-style: none;
+    border-radius: 12px;
+    background-color: #f3abb6;
+    text-align: center;
+    margin-left: -10px;
+    max-width: 100px;
+    top: 45%;
+    left: -0;
+    opacity: 40%;
+    z-index: -10;
+}
+
+.openbtn:hover {
+    opacity: 100%;
 }
 
 #main {
@@ -124,8 +184,8 @@ input[type=text]:focus {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
-    background-color: #ffe6d9;
+    padding: 35px;
+    background-color: #FFE6D9;
     color: #fff;
 }
 
@@ -137,11 +197,27 @@ input[type=text]:focus {
 .settings button {
     background-color: inherit;
     border: none;
-    color: white;
+    color: #FFFFFF;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
+}
+
+.settings .aboutbtn {
+    font-size: large;
+    border-radius: 12px;
+    background-color: #ffd5c0;
+    padding: 12px;
+    margin: 5px;
+}
+
+.settings .themesbtn {
+    font-size: large;
+    border-radius: 12px;
+    background-color: #ffd5c0;
+    padding: 12px;
+    margin: 5px;
 }
 
 .modal {
