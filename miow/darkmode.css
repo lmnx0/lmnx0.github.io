@@ -1,0 +1,35 @@
+/* darkmode */
+.darkmode {
+    background-color: #000000;
+}
+
+.darkmode .sidebar {
+    background-color: #000000;
+}
+
+.darkmode .titlebar {
+    background-color: #353532;
+}
+
+.darkmode .sidebarhead {
+    background-color: #353532;
+}
+
+.darkmode .openbtn {
+    background-color: #353532;
+}
+
+.darkmode .modal-content {
+    background-color: #353532;
+}
+
+.darkmode .settings .aboutbtn {
+    background-color: #FBFAF5;
+    color: #353532;
+}
+
+.darkmode .settings .themesbtn {
+    background-color: #FBFAF5;
+    color: #353532;
+}
+/* end of darkmode */

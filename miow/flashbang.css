@@ -1,0 +1,35 @@
+/* start of whitemode */
+.flashbang {
+    background-color: #000000;
+}
+
+.flashbang .sidebar {
+    background-color: #FFFFFF;
+}
+
+.flashbang .titlebar {
+    background-color: #FFFFFF;
+}
+
+.flashbang .sidebarhead {
+    background-color: #000000;
+}
+
+.flashbang .openbtn {
+    background-color: #FFFFFF;
+}
+
+.flashbang .modal-content {
+    background-color: #FFFFFF;
+}
+
+.flashbang .settings .aboutbtn {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.flashbang .settings .themesbtn {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+/* end of whitemode */

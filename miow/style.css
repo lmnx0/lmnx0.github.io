@@ -32,42 +32,6 @@
     background: #555; 
 }
 
-/* darkmode */
-.darkmode {
-    background-color: #000000;
-}
-
-.darkmode .sidebar {
-    background-color: #000000;
-}
-
-.darkmode .titlebar {
-    background-color: #353532;
-}
-
-.darkmode .sidebarhead {
-    background-color: #353532;
-}
-
-.darkmode .openbtn {
-    background-color: #353532;
-}
-
-.darkmode .modal-content {
-    background-color: #353532;
-}
-
-.darkmode .settings .aboutbtn {
-    background-color: #FBFAF5;
-    color: #353532;
-}
-
-.darkmode .settings .themesbtn {
-    background-color: #FBFAF5;
-    color: #353532;
-}
-/* end of darkmode */
-
 body {
     margin: 0;
     overflow: hidden;
@@ -127,6 +91,9 @@ input[type=text]:focus {
     background-color: #f3abb6;
     color: #fff;
     transition: 0.5s;
+    position: sticky;
+    position: -webkit-sticky; /* safari */
+    top: 0;
 }
 
 #miowsic {
@@ -146,6 +113,7 @@ input[type=text]:focus {
     top: 0;
     right: 25px;
     font-size: 36px;
+    margin: 10px;
 }
 
 .scrnbtn {
@@ -154,6 +122,7 @@ input[type=text]:focus {
     top: 0;
     right: 60px;
     font-size: 36px;
+    margin: 10px;
 }
 
 .openbtn {

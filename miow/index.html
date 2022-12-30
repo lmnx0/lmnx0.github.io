@@ -5,10 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="player.css">
+    <link rel="stylesheet" href="darkmode.css">
+    <link rel="stylesheet" href="flashbang.css">
     <title>Miow</title>
 </head>
-<body>
+<body onload="javascript:openNav()">
     <!-- sidebar -->
     <div id="mySidebar" class="sidebar">
         <div class="sidebarhead">
@@ -18,23 +22,29 @@
                 <button class="closebtn" onclick="closeNav()"><i class="material-icons">close</i></button>
             </header>
         </div>
-        <!-- searchbar -->
-        <input id="searchbar" onkeyup="search_music()" type="text"
-        name="search" placeholder="Search Miowsic...">
-        <!-- musiclist -->
-        <ul id='list'>
-            <li class="music"><iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/463867893&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><p class="musicname">Hikaru Nara</p></li>
-            <li class="music"><iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/944772085&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><p class="musicname">Bitch Oten</p></li>
-            <li class="music"><iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1116765985&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><p class="musicname">Step</p></li>
-            <li class="music"><iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1112202109&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><p class="musicname">Diamond no Jundo</p></li>
-            <li class="music"></li>
-            <li class="music"></li>
-            <li class="music"></li>
-            <li class="music"></li>
-            <li class="music"></li>
-            <li class="music"></li>
-            <li class="music"></li>
-        </ul>
+        <div class="player">
+            <div class="details">
+                <div class="now-playing">PLAYING x OF y</div>
+                <div class="track-art"></div>
+                <div class="track-name">Track Name</div>
+                <div class="track-artist">Track Artist</div>
+            </div>
+            <div class="buttons">
+                <div class="prev-track" onclick="prevTrack()"><i class="fa fa-step-backward fa-2x"></i></div>
+                <div class="playpause-track" onclick="playpauseTrack()"><i class="fa fa-play-circle fa-5x"></i></div>
+                <div class="next-track" onclick="nextTrack()"><i class="fa fa-step-forward fa-2x"></i></div>
+            </div>
+            <div class="slider_container">
+                <div class="current-time">00:00</div>
+                <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                <div class="total-duration">00:00</div>
+            </div>
+            <div class="slider_container">
+                <i class="fa fa-volume-down"></i>
+                <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+                <i class="fa fa-volume-up"></i>
+            </div>
+        </div>
     </div>
 
     <header>
@@ -62,6 +72,7 @@
     </header>
 
     
+    <script src="player.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
