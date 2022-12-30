@@ -50,8 +50,8 @@ function search_music() {
 //start of resize
 //open
 function openNav() {
-    document.getElementById("mySidebar").style.width = "40%";
-    document.getElementById("main").style.marginLeft = "40%";
+    document.getElementById("mySidebar").style.width = "20%";
+    document.getElementById("main").style.marginLeft = "20%";
 }
  
 //close
@@ -70,8 +70,8 @@ function fullNav() {
  
 //minimize
 function minNav() {
-    document.getElementById("mySidebar").style.width = "40%";
-    document.getElementById("main").style.marginLeft= "40%";
+    document.getElementById("mySidebar").style.width = "20%";
+    document.getElementById("main").style.marginLeft= "20%";
     document.getElementById("sbscreen").innerHTML = "fullscreen";
 }
  
