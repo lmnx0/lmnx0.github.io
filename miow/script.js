@@ -1,7 +1,8 @@
 //var
-var resize = 1 //resize
+//var resize = 0 //resize
 
 //let
+let resize = 0;
 let theme = 0;
 let themes = document.body;//themes
  
@@ -50,8 +51,8 @@ function search_music() {
 //start of resize
 //open
 function openNav() {
-    document.getElementById("mySidebar").style.width = "20%";
-    document.getElementById("main").style.marginLeft = "20%";
+    document.getElementById("mySidebar").style.width = "350px";
+    document.getElementById("main").style.marginLeft = "350px";
 }
  
 //close
@@ -59,6 +60,7 @@ function closeNav() {
     document.getElementById("mySidebar").style.width = "0";
     document.getElementById("main").style.marginLeft= "0";
     document.getElementById("sbscreen").innerHTML = "fullscreen";
+    resize = 0;
 }
  
 //full screen
@@ -70,33 +72,19 @@ function fullNav() {
  
 //minimize
 function minNav() {
-    document.getElementById("mySidebar").style.width = "20%";
-    document.getElementById("main").style.marginLeft= "20%";
+    document.getElementById("mySidebar").style.width = "350px";
+    document.getElementById("main").style.marginLeft= "350px";
     document.getElementById("sbscreen").innerHTML = "fullscreen";
 }
- 
-//backup resize
-/* function clickNav() {
-    switch(resize) {
-        case 0 :
-            minNav()
-            ++ resize
-            break;
-        case 1 :
-            fullNav()
-            -- resize
-            break;
-    }
-} */
 
 //resize
 function clickNav() {
     if (resize == 0) {
-        minNav();
-        ++ resize;
-    } else {
         fullNav();
-        -- resize;
+        resize ++;
+    } else {
+        minNav();
+        resize --;
     }
 }
 // end of resize
@@ -149,7 +137,7 @@ function clickTheme() {
         theme++
     } else if(theme == 1){
         flashBang();
-      theme++
+        theme++
     }else{
         themes.classList.remove('flashbang')
         themes.classList.remove('darkmode')

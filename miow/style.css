@@ -48,41 +48,6 @@ body {
     transition: 0.5s;
 }
 
-#searchbar{
-    margin-top: 50px;
-    margin-left: 30px;
-    padding:15px;
-}
-
-input[type=text] {
-    width: 30%;
-    border: none;
-    border-bottom: 2px solid #353532;
-    background-color: inherit;
-    -webkit-transition: width 0.15s ease-in-out;
-    transition: width 0.15s ease-in-out;
-}
-
-/* When the input field gets focus,
-change its width to 100% */
-input[type=text]:focus {
-    width: 40%;
-}
-
-#list{
-   padding: 20px;
-   list-style: none;
-}
-
-.music{
-    display: list-item;
-    margin: 10px;
-}
-
-.musicname {
-    visibility: hidden;
-}
-
 .sidebarhead {
     display: flex;
     align-items: center;

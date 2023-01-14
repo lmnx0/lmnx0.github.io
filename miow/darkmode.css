@@ -4,7 +4,7 @@
 }
 
 .darkmode .sidebar {
-    background-color: #000000;
+    background-color: #353532;
 }
 
 .darkmode .titlebar {
@@ -12,7 +12,11 @@
 }
 
 .darkmode .sidebarhead {
-    background-color: #353532;
+    background-color: #000000;
+}
+
+.darkmode #miowsic {
+    color: #353532;
 }
 
 .darkmode .openbtn {
@@ -31,5 +35,9 @@
 .darkmode .settings .themesbtn {
     background-color: #FBFAF5;
     color: #353532;
+}
+
+.darkmode .player {
+    color: #000000;
 }
 /* end of darkmode */

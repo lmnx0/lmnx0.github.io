@@ -15,8 +15,16 @@
     background-color: #000000;
 }
 
+.flashbang #miowsic {
+    color: #FFFFFF;
+}
+
 .flashbang .openbtn {
     background-color: #FFFFFF;
+}
+
+.flashbang .settings button {
+    color: #000000;
 }
 
 .flashbang .modal-content {
@@ -31,5 +39,9 @@
 .flashbang .settings .themesbtn {
     background-color: #000000;
     color: #FFFFFF;
+}
+
+.flashbang .player {
+    color: #000000;
 }
 /* end of whitemode */
