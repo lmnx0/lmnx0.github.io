@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Assets/miowlogo.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
@@ -17,6 +18,7 @@
     <div id="mySidebar" class="sidebar">
         <div class="sidebarhead">
             <header>
+                <img class="miowsiclogo" src="Assets/funnimusic_alt_col.png" alt="Miowsic">
                 <div id="miowsic">Miowsic</div>
                 <button class="scrnbtn" onclick="clickNav()"><i class="material-icons" id="sbscreen">fullscreen</i></button>
                 <button class="closebtn" onclick="closeNav()"><i class="material-icons">close</i></button>
@@ -51,9 +53,10 @@
         <div id="main">
             <!-- header -->
             <div class="titlebar">
+                <img class="miowlogo" src="Assets/miowlogo.png" alt="MiowLogo">
                 <div class="logo">Miow</div>
                 <div class="settings">
-                    <button class="trigger"><i class="material-icons">settings</i></button>
+                    <img class="trigger" src="Assets/funnisettings_col.png" alt="Settings">
                     <div class="modal">
                         <div class="modal-content">
                             <span class="close-button">&times;</span>
@@ -67,11 +70,17 @@
                 </div>
             </div>
             <!-- button sidebar -->
-            <button class="openbtn" onclick="openNav()"><i class="material-icons">music_note</i></button>
+            <img class="openbtn" src="Assets/funnimusic_alt_col.png" alt="Music" onclick="openNav()">
+            <img id="read" class="readbtn" src="Assets/miow_read_col.png" alt="Read" onclick="readNav()">
+            <img id="game" class="gamebtn "src="Assets/miow_gaming_col.png" alt="Game" onclick="gameNav()">
         </div>
     </header>
 
-    
+    <div id="miow" class="webframe">
+        <iframe id="nice" class="frame" src="MiowRead/index.html" allow="fullscreen"></iframe>
+    </div>
+
+
     <script src="player.js"></script>
     <script src="script.js"></script>
 </body>

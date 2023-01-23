@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+#readicon {
+    float: left;
+    width: 100px; height: 100px;
+}
+
+#searchbar{
+    padding:15px;
+    border-radius: 10px;
+}
+
+input[type=text] {
+    width: 30%;
+    -webkit-transition: width 0.15s ease-in-out;
+    transition: width 0.15s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%;
+}
+
+#list{
+   font-size:  1.5em;
+   list-style: none;
+   display: flex;
+}
+
+.stories{
+  display: list-item;
+  flex: 33.33%;
+  padding: 2px;
+} 
+
+
+.title2 {
+    border-bottom: 2px solid black;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+  
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+  
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+  
+a:active {
+    color: black;
+    text-decoration: underline;
+}
+
+.storylist {
+    position: relative;
+    left: -2%;
+}

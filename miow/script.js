@@ -5,7 +5,7 @@
 let resize = 0;
 let theme = 0;
 let themes = document.body;//themes
- 
+
 //const
 const modal = document.querySelector(".modal");
 const modalContent = document.querySelector(".modal-content");
@@ -47,18 +47,33 @@ function search_music() {
 	}
 }
 //end of search bar
- 
+
+// start of button function
+// button function
+function readNav() {
+    document.getElementById("nice").src = "MiowRead/index.html";
+}
+
+function gameNav() {
+    document.getElementById("nice").src = "Assets/miow_gaming_col.png";
+}
+// end of button function
+
 //start of resize
 //open
 function openNav() {
-    document.getElementById("mySidebar").style.width = "350px";
-    document.getElementById("main").style.marginLeft = "350px";
+    document.getElementById("mySidebar").style.width = "400px";
+    document.getElementById("main").style.marginLeft = "400px";
+    document.getElementById("nice").style.width = "1080px";
+    document.getElementById("miow").style.left = "60%";
 }
  
 //close
 function closeNav() {
     document.getElementById("mySidebar").style.width = "0";
     document.getElementById("main").style.marginLeft= "0";
+    document.getElementById("nice").style.width = "1560px";
+    document.getElementById("miow").style.left = "50%";
     document.getElementById("sbscreen").innerHTML = "fullscreen";
     resize = 0;
 }
@@ -72,8 +87,8 @@ function fullNav() {
  
 //minimize
 function minNav() {
-    document.getElementById("mySidebar").style.width = "350px";
-    document.getElementById("main").style.marginLeft= "350px";
+    document.getElementById("mySidebar").style.width = "400px";
+    document.getElementById("main").style.marginLeft= "400px";
     document.getElementById("sbscreen").innerHTML = "fullscreen";
 }
 
@@ -88,7 +103,7 @@ function clickNav() {
     }
 }
 // end of resize
- 
+
 //start of modal
 //modal
 function toggleModal() {
@@ -115,7 +130,7 @@ function showingAbout(){
     aboutbtn.remove();//remove about button
     themesbtn.remove();
     para.innerText = "About us: ";
-    para2.innerText = "MAGHILAK NAKO KAY AKO RA JUD ISA NAGHIMO DINHIA YAWA";
+    para2.innerText = "We are a group of seven(7) students working together to make a website. We made this website to help relax people, particularly listening to music or to read a novel and play a game at the same time. \n \n No copyright intended, for educational purposes only.";
     document.querySelector(".modal-content").append(para);
     document.querySelector(".modal-content").append(para2);
 }
@@ -124,7 +139,7 @@ function showingAbout(){
 //start of themes
 //dark mode
 function darkMode() {
-    themes.classList.toggle("darkmode"); 
+    themes.classList.toggle("darkmode");
 }
  
 function flashBang() {

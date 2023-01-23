@@ -44,4 +44,8 @@
 .flashbang .player {
     color: #000000;
 }
+
+.flashbang .frame {
+    background-color: #FFFFFF;
+}
 /* end of whitemode */

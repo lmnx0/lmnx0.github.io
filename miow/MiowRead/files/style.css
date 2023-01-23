@@ -1,0 +1,39 @@
+#start:link, #start:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#start:hover, #start:active {
+    background-color: black;
+    color: white;
+}
+
+#storyimg {
+    float: left;
+}
+
+table {
+    padding-left: 30px;
+}
+
+td {
+    font-size: xx-large;
+}
+
+#start {
+    font-size: xx-large;
+    position: absolute;
+    top: 73%;
+    left: 18px;
+    border: 2px solid black;
+}
+
+#synopsis {
+    font-size: 15px;
+    padding: 10px;
+}

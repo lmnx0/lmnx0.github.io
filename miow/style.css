@@ -46,13 +46,14 @@ body {
     background-color: #ffcad4;
     overflow-x: hidden;
     transition: 0.5s;
+    z-index: 1;
 }
 
 .sidebarhead {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 35px;
+    padding: 11px;
     background-color: #f3abb6;
     color: #fff;
     transition: 0.5s;
@@ -64,6 +65,14 @@ body {
 #miowsic {
     font-size: 32px;
     color: black;
+    position: absolute;
+    margin-left: 90px;
+    top: 40px;
+}
+
+.miowsiclogo {
+    width: 100px;
+    height: 100px;
 }
 
 .sidebarhead button {
@@ -99,17 +108,65 @@ body {
     background-color: #f3abb6;
     text-align: center;
     margin-left: -10px;
-    max-width: 100px;
     top: 45%;
     left: -0;
     opacity: 40%;
-    z-index: -10;
+    width: 50px;
+    height: 50px;
 }
 
 .openbtn:hover {
     opacity: 100%;
+    width: 100px;
+    height: 100px;
+    transition: 0.5s;
 }
 
+.readbtn {
+    position: fixed;
+    padding: 15px;
+    font-size: 50px;
+    border-style: none;
+    border-radius: 12px;
+    background-color: #f3abb6;
+    text-align: center;
+    margin-right: -10px;
+    top: 45%;
+    right: -0;
+    opacity: 40%;
+    width: 50px;
+    height: 50px;
+}
+
+.readbtn:hover {
+    opacity: 100%;
+    width: 100px;
+    height: 100px;
+    transition: 0.5s;
+}
+
+.gamebtn {
+    position: fixed;
+    padding: 15px;
+    font-size: 50px;
+    border-style: none;
+    border-radius: 12px;
+    background-color: #f3abb6;
+    text-align: center;
+    margin-right: -10px;
+    top: 55%;
+    right: -0;
+    opacity: 40%;
+    width: 50px;
+    height: 50px;
+}
+
+.gamebtn:hover {
+    opacity: 100%;
+    width: 100px;
+    height: 100px;
+    transition: 0.5s;
+}
 #main {
     transition: margin-left .5s;
 }
@@ -117,24 +174,27 @@ body {
 .titlebar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 35px;
+    padding: 15px;
     background-color: #FFE6D9;
     color: #fff;
+    justify-content: space-between;
+}
+
+.miowlogo {
+    width: 100px;
+    height: 100px;
 }
 
 .logo {
     font-size: 32px;
     color: black;
+    position: absolute;
+    margin-left: 90px;
 }
 
-.settings button {
-    background-color: inherit;
-    border: none;
-    color: #FFFFFF;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
+.trigger {
+    width: 50px;
+    height: 50px;
     cursor: pointer;
 }
 
@@ -144,6 +204,7 @@ body {
     background-color: #ffd5c0;
     padding: 12px;
     margin: 5px;
+    cursor: pointer;
 }
 
 .settings .themesbtn {
@@ -152,6 +213,7 @@ body {
     background-color: #ffd5c0;
     padding: 12px;
     margin: 5px;
+    cursor: pointer;
 }
 
 .modal {
@@ -212,4 +274,20 @@ body {
     text-decoration: none;
     display: inline;
     font-size: medium;
+}
+
+.webframe {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -40%);
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.frame {
+    height: 720px;
+    width: 1560px;
+    transition: 0.5s;
+    border: 1px solid black;
 }

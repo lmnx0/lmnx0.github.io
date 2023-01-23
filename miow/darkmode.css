@@ -40,4 +40,8 @@
 .darkmode .player {
     color: #000000;
 }
+
+.darkmode .frame {
+    background-color: #353532;
+}
 /* end of darkmode */

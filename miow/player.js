@@ -23,22 +23,46 @@ let curr_track = document.createElement('audio');
 // Define the tracks that have to be played
 let track_list = [
     {
-        name: "Night Owl",
-        artist: "Broke For Free",
-        image: "https://images.pexels.com/photos/2264753/pexels-photo-2264753.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=250&w=250",
-        path: "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/WFMU/Broke_For_Free/Directionless_EP/Broke_For_Free_-_01_-_Night_Owl.mp3"
+        name: "Take Care",
+        artist: "Oddwin",
+        image: "music/TakeCare.png",
+        path: "music/TakeCare.mp3"
     },
     {
-        name: "Enthusiast",
-        artist: "Tours",
-        image: "https://images.pexels.com/photos/3100835/pexels-photo-3100835.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=250&w=250",
-        path: "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Tours/Enthusiast/Tours_-_01_-_Enthusiast.mp3"
+        name: "Sorry, I Like You",
+        artist: "Burbank",
+        image: "music/SorryILikeYou.png",
+        path: "music/SorryILikeYou.mp3"
     },
     {
-        name: "Shipping Lanes",
-        artist: "Chad Crouch",
-        image: "https://images.pexels.com/photos/1717969/pexels-photo-1717969.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=250&w=250",
-        path: "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/ccCommunity/Chad_Crouch/Arps/Chad_Crouch_-_Shipping_Lanes.mp3",
+        name: "Leaves",
+        artist: "Taiko",
+        image: "music/Leaves.png",
+        path: "music/Leaves.mp3",
+    },
+    {
+        name: "have you heard",
+        artist: "potsu",
+        image: "music/haveyouheard.png",
+        path: "music/haveyouheard.mp3",
+    },
+    {
+        name: "Comfort Chain",
+        artist: "Instupendo",
+        image: "music/ComfortChain.png",
+        path: "music/ComfortChain.mp3",
+    },
+    {
+        name: "A Love Letter to You",
+        artist: "Shiloh Dynasty",
+        image: "music/ALoveLettertoYou.png",
+        path: "music/ALoveLettertoYou.mp3",
+    },
+    {
+        name: "8.16.18",
+        artist: "Oddwin",
+        image: "music/8.16.18.png",
+        path: "music/8.16.18.mp3",
     },
 ];
 
