@@ -175,7 +175,7 @@ body {
     display: flex;
     align-items: center;
     padding: 15px;
-    background-color: #FFE6D9;
+    background-color: #ffd5c0;
     color: #fff;
     justify-content: space-between;
 }
@@ -188,8 +188,6 @@ body {
 .logo {
     font-size: 32px;
     color: black;
-    position: absolute;
-    margin-left: 90px;
 }
 
 .trigger {
@@ -290,4 +288,5 @@ body {
     width: 1560px;
     transition: 0.5s;
     border: 1px solid black;
+    background-color: #ffe6d9;
 }

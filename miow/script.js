@@ -55,7 +55,7 @@ function readNav() {
 }
 
 function gameNav() {
-    document.getElementById("nice").src = "Assets/miow_gaming_col.png";
+    document.getElementById("nice").src = "Game/index.html";
 }
 // end of button function
 

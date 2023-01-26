@@ -12,6 +12,10 @@
     width: 100px; height: 100px;
 }
 
+.title1 {
+    margin-top: 35px;
+}
+
 #searchbar{
     padding:15px;
     border-radius: 10px;

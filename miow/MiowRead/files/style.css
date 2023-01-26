@@ -17,6 +17,10 @@
     float: left;
 }
 
+#texticon {
+    margin-top: 35px;
+}
+
 table {
     padding-left: 30px;
 }
@@ -28,7 +32,7 @@ td {
 #start {
     font-size: xx-large;
     position: absolute;
-    top: 73%;
+    top: 76%;
     left: 18px;
     border: 2px solid black;
 }

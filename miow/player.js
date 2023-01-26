@@ -64,6 +64,12 @@ let track_list = [
         image: "music/8.16.18.png",
         path: "music/8.16.18.mp3",
     },
+    {
+        name: "Days Of Wine And Roses",
+        artist: "Wes Montgomery",
+        image: "music/DaysOfWineAndRoses.png",
+        path: "music/DaysOfWineAndRoses.mp3",
+    }
 ];
 
 function loadTrack(track_index) {
