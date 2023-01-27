@@ -145,7 +145,32 @@ monogatari.script ({
 		"h Ah, I've been waiting for this day, our first date together!",
 		'show character h normalZoomed at center',
 		"h Oh, and go get ready now! I'll be waiting outside.",
-		'jump readyingfordateG',
+		{
+			'Choice': {
+				'Timer': {
+					// Time in milliseconds 
+					time: 60000,
+					// The function to run when the time is over
+					callback: () => {
+						//Click the "tookTooLong" button.
+						monogatari.element().find('[data-choice="tookTooLongG2.1"]').get(0).click();
+						
+				// Promise friendly!
+						return Promise.resolve ();
+					}
+				},
+				'Option4.1g': {
+					'Text': 'Alright.',
+					'Do': 'jump readyingfordateB',
+					'Class': 'boyButton'
+				},
+				'tookTooLongG2.1': {
+					'Text': 'tookTooLong',
+					'Do': 'jump tookTooLongB2.1',
+					'Class': 'invisible',
+				},
+			}
+		},
 	],
 
 	'readyingfordateG': [
@@ -161,6 +186,16 @@ monogatari.script ({
 		"You then went outside your house.",
 		'stop sound door',
 		'jump normalConvog3',
+	],
+
+	'tookTooLongG2.1': [
+		'show character h angryZoomed with headShake',
+		'wait 1000',
+		'h Oh you went back to sleep? How stubborn.',
+		"h Then I'll let you sleep now... for the rest of your life.",
+		'show scene #000000 with fade out duration 5s',
+		'centered YOU DIED.',
+		'end'
 	],
 
 	'normalConvog3': [

@@ -161,7 +161,7 @@ monogatari.script ({
 			'Choice': {
 				'Timer': {
 					// Time in milliseconds 
-					time: 10000,
+					time: 60000,
 					// The function to run when the time is over
 					callback: () => {
 						//Click the "tookTooLong" button.
