@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Chapter One: Masks and Mirrors</title>
+  <title>project-coincidence</title>
   <!-- Pixel-style font -->
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
@@ -14,7 +14,7 @@
     <div class="profile-info">
       <div class="profile-pic"></div>
       <div class="user-details">
-        <h2 class="username">@username</h2>
+        <h2 class="username">@unknown</h2>
         <p class="bio">It’s only a secret if someone pretends it is.</p>
         <p class="followers">3 followers</p>
       </div>
@@ -27,6 +27,12 @@
 
   <!-- Main Feed for Dialogue Posts -->
   <main class="feed"></main>
+
+  <!-- Reusable choice modal (initially hidden) -->
+  <div class="choice-box" id="choiceBox" style="display: none;">
+    <h3 id="choiceBoxTitle">Choose an action:</h3>
+    <div id="choiceBoxButtons"></div>
+  </div>
 
   <!-- Persistent Hint Footer Stuck to the Bottom -->
   <footer class="hint">

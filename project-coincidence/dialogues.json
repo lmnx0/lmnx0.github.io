@@ -3,7 +3,7 @@
       "id": "scene1_narration",
       "sentences": [
         "I'm in my dorm room at midnight.",
-        "It's nearly 2:00 AM. While the world around me sleeps, my mind roils with the secrets I hide from daylight.",
+        "It's nearly 2:00 AM. While the world around me sleeps, my mind rolls with the secrets I hide from daylight.",
         "(The scene opens in my modest, slightly cramped dorm room. A single desk lamp and the pale glow of my computer screen illuminate scattered notebooks, personal photos, and a half-empty mug. Rain taps steadily against a foggy window.)"
       ]
     },
@@ -14,5 +14,70 @@
         "\"Every day, I wear a mask. Out on campus, I'm that person everyone sees as bright and full of life. I laugh, I connect, and I let the world see only what I want them to see. But here—in the solitude of midnight—the mask dissolves, and I'm left with the raw, unfiltered pieces of a self I thought I could control.\"",
         "I notice a blinking cursor on the empty text field of my social media post editor."
       ]
+    },
+
+
+
+    {
+      "id": "scene2_intro_narration",
+      "sentences": [
+        "Scene 2: The Choice of Expression"
+      ]
+    },
+    {
+      "id": "scene2_option1_1",
+      "sentences": [
+        "You lean forward and begin typing. The screen shows your keystrokes as you compose:"
+      ]
+    },
+    {
+      "id": "scene2_option1_2",
+      "sentences": [
+        "\"Behind every smile lies a wound unseen. Even the brightest lights cast deep shadows.\""
+      ]
+    },
+    {
+      "id": "scene2_option1_3",
+      "sentences": [
+        "After you hit 'post,' the text vanishes into the digital ether. Almost immediately, a notification pops up.",
+        "\"Your secrets are more obvious than you think.\""
+      ]
+    },
+    {
+      "id": "scene2_option1_4",
+      "sentences": [
+        "You pause, feeling a chill. Is this a random troll—or someone from my past?"
+      ]
+    },
+
+
+
+    {
+      "id": "scene2_option2",
+      "sentences": [
+        "You scroll through a vibrant gallery of campus snapshots and cheerful posts.",
+        "Suddenly, one post grabs your attention:",
+        "Post from @ghosted_me: \"They promised forever, then vanished into silence.\"",
+        "Almost simultaneously, a comment appears on one of your older posts.",
+        "[On-Screen Comment]",
+        "@empty_: \"Some echoes never fade.\"",
+        "A surge of memories and unspoken pain floods you."
+      ]
+    },
+
+
+
+    {
+      "id": "scene2_option3",
+      "sentences": [
+        "You sit motionless, watching the blinking cursor. The silence presses in around you.",
+        "You (Inner Monologue):",
+        "\"Maybe if I surrender completely to the silence, the relentless noise in my head will finally fade. But what if that silence is just the prelude to something darker?\"",
+        "Without warning, a direct message appears:",
+        "[On-Screen Notification]",
+        "@empty_: \"You can’t hide from the truth inside you.\""
+      ]
     }
   ]  
+
+  
