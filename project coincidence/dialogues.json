@@ -1,0 +1,18 @@
+[
+    {
+      "id": "scene1_narration",
+      "sentences": [
+        "I'm in my dorm room at midnight.",
+        "It's nearly 2:00 AM. While the world around me sleeps, my mind roils with the secrets I hide from daylight.",
+        "(The scene opens in my modest, slightly cramped dorm room. A single desk lamp and the pale glow of my computer screen illuminate scattered notebooks, personal photos, and a half-empty mug. Rain taps steadily against a foggy window.)"
+      ]
+    },
+    {
+      "id": "scene1_character",
+      "sentences": [
+        "I think to myself:",
+        "\"Every day, I wear a mask. Out on campus, I'm that person everyone sees as bright and full of life. I laugh, I connect, and I let the world see only what I want them to see. But here—in the solitude of midnight—the mask dissolves, and I'm left with the raw, unfiltered pieces of a self I thought I could control.\"",
+        "I notice a blinking cursor on the empty text field of my social media post editor."
+      ]
+    }
+  ]  

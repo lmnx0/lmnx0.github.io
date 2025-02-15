@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chapter One: Masks and Mirrors</title>
+  <!-- Pixel-style font -->
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Profile Header (Social-media style navbar) -->
+  <header class="profile-header">
+    <div class="profile-info">
+      <div class="profile-pic"></div>
+      <div class="user-details">
+        <h2 class="username">@username</h2>
+        <p class="bio">It’s only a secret if someone pretends it is.</p>
+        <p class="followers">3 followers</p>
+      </div>
+    </div>
+    <nav class="profile-tabs">
+      <a href="#" class="active">Strings</a>
+      <a href="#">Replies</a>
+    </nav>
+  </header>
+
+  <!-- Main Feed for Dialogue Posts -->
+  <main class="feed"></main>
+
+  <!-- Persistent Hint Footer Stuck to the Bottom -->
+  <footer class="hint">
+    <p>Tap or click anywhere to continue...</p>
+  </footer>
+
+  <!-- Load dialogue data first, then the main script -->
+  <script src="dialogues.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
